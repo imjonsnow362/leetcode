@@ -13,6 +13,9 @@ class Solution {
         //base condition is when the index is not present in the array and we have processed all elements till last index it means we have found a subset 
         //Check notebook index 3 recursive tree for clarification
         if(currentIndex >= nums.length){
+            //since we have pointed the same memory location currentSubset 
+            //we can create a new arraylist with the same values 
+            //when we create a new arraylist it is going to keep a copy of this 
             answer.add(new ArrayList<>(currentSubset));
             return;
         }
