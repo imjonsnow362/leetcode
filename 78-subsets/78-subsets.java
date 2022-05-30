@@ -16,6 +16,7 @@ class Solution {
             //since we have pointed the same memory location currentSubset 
             //we can create a new arraylist with the same values 
             //when we create a new arraylist it is going to keep a copy of this 
+            //the purpose of creating a new arraylist is so that when we do backtracking the values change all over the tree and they are not pointing to the new arraylist memory location so we wont get a wrong answer
             answer.add(new ArrayList<>(currentSubset));
             return;
         }
