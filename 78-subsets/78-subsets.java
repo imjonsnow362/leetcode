@@ -24,6 +24,13 @@ class Solution {
         //for example if we jumped from index 0 to 1 the element at index 0 will be added in the bracket check notebook for reference
         currentSubset.add(nums[currentIndex]);
         generateSubsets(nums, currentIndex+1, currentSubset, answer);
+        /* this is the original code which will not generate desired subset 
+         this is happening because the second line is not getting executed
+         because for both the cases element is already added hence we require backtracking
+        currentSubset.add(nums[currentIndex]);
+        1 ---- generateSubsets(nums, currentIndex+1, currentSubset, answer);
+        2 ---- generateSubsets(nums, currentIndex+1, currentSubset, answer);
+        */
         //Second call will be if we are not going to consider the element
         //Since arraylist integer is pass by reference 
         //If i have changed something in the recursive function and then I am making a call 
@@ -31,7 +38,7 @@ class Solution {
         //While coming out of the recursive function I need to delete this value 
         //Last element we have added needs to be removed 
         //Once I have returned from the recursive function I need to undo that change this is known as backtracking ⬆️
-        //I am undoing the change of line 25 in line 34
+        //I am undoing the change of line 25 in line 35
         currentSubset.remove(currentSubset.size()-1);
         generateSubsets(nums, currentIndex+1, currentSubset, answer);
         return;
