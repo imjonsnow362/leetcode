@@ -10,6 +10,7 @@ class Solution {
                 //the cases in which we are going to run a DFS 
                 //if the first character matches i.e. starting point and char at index 0 in string matches 
                 //findWord function is the DFS function
+                //the value present in the 0th index should be equal to the cell of the board 
                 if(board[currentRow][currentCol] == word.charAt(0) && findWord(board, currentRow, currentCol, 0, word, m, n))
                     //If this function is returning true that means I have found the complete string
                     return true;
