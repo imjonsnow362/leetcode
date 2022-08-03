@@ -30,7 +30,6 @@ class Solution {
                 current = current.next;
             }
         }
-        return dummyNode.next;
-            
+        return dummyNode.next;  
     }
 }
