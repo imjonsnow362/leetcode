@@ -10,6 +10,9 @@
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        //Putting corner case when there is no node or only 1 node
+        if(head == null || head.next == null)
+            return null;
         //Initialise a runner pointer that is going to point to head
         ListNode runner = head;
         //Initialise a dummyNode
