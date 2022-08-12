@@ -11,6 +11,8 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
+        //BRUTE FORCE APPROACH
+        //create a hashset seen to store elements of linkedlist to check 
         Set<ListNode> seen = new HashSet<>();
         //Now we will initialise a current here and point it to head
         ListNode current = head;
