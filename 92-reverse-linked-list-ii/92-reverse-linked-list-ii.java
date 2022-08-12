@@ -41,7 +41,7 @@ class Solution {
         ListNode prev = null;
         //We put condition that until and unless current is not equal to null 
         //but we are reversing a small set of nodes so
-        //check notebook page 41,42 to understand this for loop 
+        //check notebook page 41,42 to understand this for loop from point vii)
         for(int i = 0; i < n; i++){
             //Initialise a tempNode
             ListNode tempNode = current.next;
