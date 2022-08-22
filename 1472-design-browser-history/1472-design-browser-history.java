@@ -32,7 +32,7 @@ class BrowserHistory {
         newNode.prev = iterator;
         //after putting link then point iterator to the latest node
         iterator = newNode;
-        return;
+        //return;
     }
     
     public String back(int steps) {
