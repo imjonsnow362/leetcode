@@ -20,7 +20,7 @@ public class Solution extends GuessGame {
             //comparison
             if(temp==0){
                 return mid;
-            //decide 
+            //check the problem description on why we are using -1, 1 and 0
             }else if(temp == -1){
                 end = mid - 1;
             }
