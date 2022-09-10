@@ -20,6 +20,7 @@ class Solution {
                     start = mid + 1;
                 //check whether right half is sorted or not
             }else{
+                //this will check whether the element is lying in between mid and end or not 
                 if(nums[mid] < target && nums[end] >= target)
                 start = mid + 1;   
                 
