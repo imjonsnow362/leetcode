@@ -22,12 +22,14 @@ class Solution {
             }else{
                 //this will check whether the element is lying in between mid and end or not 
                 if(nums[mid] < target && nums[end] >= target)
+                    //move to the right half
                 start = mid + 1;   
-                
+                //otherwise move to the left half 
                 else 
                     end = mid - 1;
             }
         }
+        //othwerise after while loop we are not getting element so we just return -1
         return -1;
     }
 }
