@@ -4,7 +4,7 @@ class Solution {
         nums[i]=nums[j];
         nums[j]=t;
     }
-    
+    //CHECK PAGE 149 for explanation
     public void sortColors(int[] nums) {
         int low = 0;
         int high = nums.length-1;
