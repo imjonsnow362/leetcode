@@ -1,7 +1,7 @@
 class Solution {
     public int singleNumber(int[] nums) {
          Map<Integer,Integer> map = new HashMap<>();
-    
+    //Iterate and add elements 
     for(int i=0;i<nums.length;i++)
     {
         if(map.containsKey(nums[i]))
