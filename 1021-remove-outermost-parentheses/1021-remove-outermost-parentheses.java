@@ -1,35 +1,26 @@
 class Solution {
     public String removeOuterParentheses(String S) {
-        String res = "";
-  // Stores the count of
-  // opened parentheses
-  int count = 0;
- 
-  // Traverse the string
-  for (int c = 0;
-           c < S.length(); c++)
-  {
-    // If opening parentheses is
-    // encountered and their
-    // count exceeds 0
-    if (S.charAt(c) == '(' &&
-        count++ > 0)
- 
-      // Include the character
-      res += S.charAt(c);
- 
-    // If closing parentheses is
-    // encountered and their
-    // count is less than count
-    // of opening parentheses
-    if (S.charAt(c) == ')' &&
-        count-- > 1)
- 
-      // Include the character
-      res += S.charAt(c);
-  }
- 
-  // Return the resultant string
-  return res;
+        List<Integer> l = new ArrayList<>();
+        Stack<Character> stk = new Stack<>();
+        char[] ar = S.toCharArray();
+        for(int i = 0; i < ar.length; i++){
+            if(stk.size() == 0){
+                l.add(i);
+                stk.push(ar[i]); continue;
+            }
+            if(stk.peek() == '(' && ar[i] == ')'){
+                stk.pop(); if(stk.size() == 0) l.add(i);
+            }else if(stk.peek() == ')' && ar[i] == '('){
+                stk.pop(); if(stk.size() == 0) l.add(i);
+            }else{
+                stk.push(ar[i]);
+            }
+        }        
+        System.out.println(l);
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < l.size() ; i+= 2){
+            sb.append(S.substring(l.get(i)+1, l.get(i+1)));
+        }
+        return sb.toString();
     }
 }
