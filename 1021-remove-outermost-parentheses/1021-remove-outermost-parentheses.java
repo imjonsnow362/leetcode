@@ -16,7 +16,7 @@ class Solution {
                 stk.push(ar[i]);
             }
         }        
-        System.out.println(l);
+        //System.out.println(l);
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < l.size() ; i+= 2){
             sb.append(S.substring(l.get(i)+1, l.get(i+1)));
