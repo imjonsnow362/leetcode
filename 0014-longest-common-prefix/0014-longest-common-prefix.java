@@ -11,7 +11,7 @@ class Solution {
             //Then we remove the substring and check which is the longest using start 0 and length of prefix - 1
             while(strs[i].indexOf(prefix)!=0){
                 prefix = prefix.substring(0, prefix.length() - 1);
-                if(prefix.isEmpty()) return "";
+                //if(prefix.isEmpty()) return "";
             }
         }
         return prefix;
