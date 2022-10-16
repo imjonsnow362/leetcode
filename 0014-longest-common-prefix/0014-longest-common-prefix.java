@@ -1,5 +1,6 @@
 class Solution {
     public String longestCommonPrefix(String[] strs) {
+        //Check page 172
         //Base case - if the array is empty
         if(strs.length==0) return "";
         //We will create a String named prefix and store the first string of the String array in this
