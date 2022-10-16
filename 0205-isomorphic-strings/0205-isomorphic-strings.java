@@ -6,7 +6,7 @@ class Solution {
             return false;
         } 
         HashMap<Character, Character> map1 = new HashMap<>();
-        //I am using two hashmap to check whether there is a character left in string2 to use 
+        //I am using two hashmap to check whether there is a character left in string2 to use or not so we have specified boolean in map 2
         HashMap<Character, Boolean> map2 = new HashMap<>();
         
         for(int i=0; i<s.length(); i++){
