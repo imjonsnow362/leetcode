@@ -1,6 +1,6 @@
 class Solution {
     public boolean isIsomorphic(String s, String t) {
-        //Page 173
+        //Page 172,173
         //Base case 
         if(s.length() != t.length()){
             return false;
