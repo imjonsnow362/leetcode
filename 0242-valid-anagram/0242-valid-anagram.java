@@ -1,5 +1,6 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
+        //Page 176
        //CLEAN CODE - 
         //Base case 
         if(s.length() != t.length()) return false;
@@ -8,7 +9,7 @@ class Solution {
         //Iterate through s and store the count of each character
         for(int i=0; i<s.length(); i++){
             //Check and store the count of each character in s
-            //s.charAt will get current Char in s and -'a' by doing s.charat(i)-a we will get the index of the character //so example we get a in s.charAt when we subtract -'a' we get 0 which is the correct index of a in the array (a is the first letter in alphabet at index 0)
+            //s.charAt will get current Char in s and -'a' by doing s.charat(i)-a we will get the index of the character //so example we get a in s.charAt when we subtract -'a' we get 0 which is the correct index of a in the array (a is the first letter in alphabet at index 0). We are also increasing the count of each character accordingly using ++ so if anagram has 3 a's so a's value will become 3 using ++
             char_count[s.charAt(i)-'a']++;
             //Check and decrement the count of each character in t 
 //Using this we can bring count of each character down to 0 that means it is leveled out and it is a valid anagram 
