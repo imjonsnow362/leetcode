@@ -2,7 +2,7 @@ class Solution {
     private int getMinCount(int[] charCount) {
         int min = Integer.MAX_VALUE;
 		
-        for (int i = 0; i < charCount.length; ++i) {
+        for (int i = 0; i < charCount.length; i++) {
             if (charCount[i] != 0) {
                 min = Math.min(min, charCount[i]);
             }
@@ -14,7 +14,7 @@ class Solution {
     private int getMaxCount(int[] charCount) {
         int max = 0;
 		
-        for (int i = 0; i < charCount.length; ++i) {
+        for (int i = 0; i < charCount.length; i++) {
             max = Math.max(max, charCount[i]);
         }
 		
