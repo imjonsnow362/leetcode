@@ -9,7 +9,6 @@ class Solution {
         //We are iterating through the string letter by letter
         for(int i=0; i<s.length(); i++){
             //We will handle two cases - Case where the one special middle character doesnt have a match ("racEcar") and other case is where the string is a palindrome ("abba")
-            //We are going to loop throug each character so we will pass i and i in place of left and right
             //Why we are passing i both times ? - in case of racEcar once we call function here it will check if left is equal to right so since i is passed two times it is pointing at the middle element E (so E = E) 
             int len1 = expandFromMiddle(s, i, i);
             //left pointer will be i and right pointer will be i+1 (aaaabbaaaa) left will point to b and right will point to the b to the right and expand from there 
