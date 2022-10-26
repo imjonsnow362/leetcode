@@ -23,15 +23,18 @@ class GfG {
 }
 // } Driver Code Ends
 
+
+//User function Template for Java
+
 class Solution {
     public int[] longestCommonPrefix(String s1, String s2){
         //code here
-        int[] ans = {-1,-1};
-        for(int i = 0;i<s1.length();i++){
+        int[] ans = {-1, -1};
+        for(int i=0; i<s1.length(); i++){
             if(s2.contains(s1.substring(0,i))){
-                ans[0] = 0;
-                ans[1] = i - 1;
-            }
+            ans[0] = 0;
+            ans[1] = i-1;
+        }
         }
         return ans;
     }
