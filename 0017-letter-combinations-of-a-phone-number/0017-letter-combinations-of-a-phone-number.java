@@ -23,6 +23,7 @@ class Solution {
         }
         Character currentChar = digits.charAt(currentIndex);
         //Otherwise get all mapping 
+        //E.g. if we are looking for mapping of 4 but 4 is a string so we will convert it into an integer using -'0' so KEYS_MAPPING[] will have integer in square bracket because we used currentChar 
         //This will return a character so we need to convert it into form of integer using -'0;
         String letters = KEYS_MAPPING[currentChar-'0'];
         //Iterate on everything
