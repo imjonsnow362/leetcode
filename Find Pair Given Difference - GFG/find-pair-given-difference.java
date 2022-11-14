@@ -52,7 +52,7 @@ class Solution
         if(memo.containsKey(complement) || memo.containsKey(complement2))
             return true;
             
-            memo.put(nums[i], i);
+            memo.put(nums[i], 1);
     }
     return false;
     }
