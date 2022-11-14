@@ -41,10 +41,12 @@ class Solution
 {
     public boolean findPair(int nums[], int size, int n)
     {
+        //CHECK PAGE 229
+        //int n is difference
         //code here.
         HashMap<Integer, Integer> memo = new HashMap<>();
     
-        for(int i=0; i<nums.length; i++){
+        for(int i=0; i<size; i++){
         int complement = n + nums[i];
         int complement2 = nums[i]-n;
         if(memo.containsKey(complement) || memo.containsKey(complement2))
