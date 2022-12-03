@@ -1,6 +1,10 @@
 class Solution {
     public String[] findWords(String[] words) {
+        //Maps each character to the row in the keyboard in which it occurs.
         int[] rows = {2,3,3,2,1,2,2,2,1,2,2,2,3,3,1,1,1,1,2,1,1,3,1,3,1,3};
+        //I iterated through the given String array and took the row of first character of current 
+//String and then verified if each other character in that String points to the same row 
+//number in my array.
         List<String> list = new ArrayList<>();
         for(String a: words){
            String s = a.toLowerCase();
